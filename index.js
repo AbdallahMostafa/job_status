@@ -8,7 +8,7 @@ app.post("/submit", (req, res) => {
     res.end("\n\n" + jobId + "\n\n");
 });
 
-app.get("/checkstatus", (req, res) => {
+app.get("/checkStatus", (req, res) => {
     console.log(jobs[req.query.jobId]);
     res.end("\n\nJobStatus: " + jobs[req.query.jobId] + "%\n\n");
 });
