@@ -21,3 +21,8 @@ function updateJob(jobId, prg) {
     if (prg == 100) return;
     this.setTimeout(()=> updateJob(jobId, prg + 10), 3000);
 }
+
+// Client Code
+// curl -X POST http://localhost:8080/submit
+// jobId
+// curl http://localhost:8080/checkstatus?jobId=jobId  
